@@ -103,14 +103,6 @@ Open WebUI를 외부에서 접근하기 위해서는 GCP 방화벽 규칙이 허
 2. **네트워크 태그**에 `open-webui-tag` 추가
 3. **저장**
 
-### 3-3. 방화벽 규칙 및 VM 태그 확인
-
-```
-gcloud compute firewall-rules list
-gcloud compute instances describe [YOUR_INSTANCE_NAME] --format="get(tags.items)"
-```
-
-방화벽 규칙과 VM의 태그가 정상적으로 설정되었는지 확인할 수 있습니다.
 
 ---
 
